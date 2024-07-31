@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "backendProjects",
+			"path": "../../backendProjects"
+		},
+		{
+			"name": "bgmiRoom",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "bgmiRoom"
+	}
+}
