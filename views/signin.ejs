@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/signin.css">
+    <title>SIGNIN</title>
+</head>
+<body>
+    <%- include('partials/nav') %>
+    <div class="background">
+        <form class="container" action="/signin" method="post">
+            <input type="text" name="email" id="emailInput" placeholder="example@gamil.com">
+            <input type="text" name="password" id="passwordInput" placeholder="password">
+            <button type="submit">Go</button>
+        </form>
+    </div>
+
+    <%- include('partials/navLink') %>
+    <script src="scripts/signin.js"></script>
+    <% if (typeof error !== 'undefined' && error) { %>
+        <script>
+            errorOutput('<%=error%>');
+        </script> 
+    <% } %>
+</body>
+</html>
